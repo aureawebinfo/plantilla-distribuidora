@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header (igual que en index.html) -->
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -43,15 +43,182 @@
 
         <section class="catalog">
             <div class="container">
+                <div class="catalog-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="herramientas">Herramientas</button>
+                    <button class="filter-btn" data-filter="electricos">Equipos Eléctricos</button>
+                    <button class="filter-btn" data-filter="construccion">Materiales de Construcción</button>
+                    <button class="filter-btn" data-filter="tornilleria">Tornillería</button>
+                    <button class="filter-btn" data-filter="tuberias">Tuberías</button>
+                    <button class="filter-btn" data-filter="seguridad">Seguridad Industrial</button>
+                </div>
+                
                 <div class="products-grid">
-                    <!-- Aquí irían todos los productos del catálogo -->
-                    <!-- La estructura sería similar a la sección de productos destacados en index.html -->
+                    <!-- Herramientas -->
+                    <article class="product-card" data-category="herramientas">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1572981779307-38f8b0456222?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Taladro Industrial">
+                        </div>
+                        <div class="product-info">
+                            <h3>Taladro Industrial</h3>
+                            <p>Taladro de alta potencia para trabajos industriales pesados.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="herramientas">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Sierra Circular">
+                        </div>
+                        <div class="product-info">
+                            <h3>Sierra Circular</h3>
+                            <p>Sierra circular profesional para cortes precisos en madera y metal.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="herramientas">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Martillo Demoledor">
+                        </div>
+                        <div class="product-info">
+                            <h3>Martillo Demoledor</h3>
+                            <p>Martillo demoledor de alto impacto para trabajos de construcción.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
+
+                    <!-- Equipos Eléctricos -->
+                    <article class="product-card" data-category="electricos">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25856cd63?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cables Eléctricos">
+                        </div>
+                        <div class="product-info">
+                            <h3>Cables Eléctricos</h3>
+                            <p>Cables de cobre de alta conductividad y durabilidad.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="electricos">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Interruptores Industriales">
+                        </div>
+                        <div class="product-info">
+                            <h3>Interruptores Industriales</h3>
+                            <p>Interruptores de alta capacidad para entornos industriales.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="electricos">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Transformadores">
+                        </div>
+                        <div class="product-info">
+                            <h3>Transformadores</h3>
+                            <p>Transformadores de potencia para distribución eléctrica.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
+
+                    <!-- Materiales de Construcción -->
+                    <article class="product-card" data-category="construccion">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cemento">
+                        </div>
+                        <div class="product-info">
+                            <h3>Cemento</h3>
+                            <p>Cemento de alta resistencia para construcción.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="construccion">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ladrillos">
+                        </div>
+                        <div class="product-info">
+                            <h3>Ladrillos</h3>
+                            <p>Ladrillos de arcilla para construcción de muros.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
+
+                    <!-- Tornillería -->
+                    <article class="product-card" data-category="tornilleria">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tornillos">
+                        </div>
+                        <div class="product-info">
+                            <h3>Tornillos</h3>
+                            <p>Amplia variedad de tornillos para todo tipo de aplicaciones.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="tornilleria">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tuercas">
+                        </div>
+                        <div class="product-info">
+                            <h3>Tuercas</h3>
+                            <p>Tuercas de diferentes medidas y materiales.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
+
+                    <!-- Tuberías -->
+                    <article class="product-card" data-category="tuberias">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tuberías PVC">
+                        </div>
+                        <div class="product-info">
+                            <h3>Tuberías PVC</h3>
+                            <p>Tuberías de PVC para conducción de fluidos.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="tuberias">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tuberías Cobre">
+                        </div>
+                        <div class="product-info">
+                            <h3>Tuberías Cobre</h3>
+                            <p>Tuberías de cobre para instalaciones de gas y agua.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
+
+                    <!-- Seguridad Industrial -->
+                    <article class="product-card" data-category="seguridad">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Casco de Seguridad">
+                        </div>
+                        <div class="product-info">
+                            <h3>Casco de Seguridad</h3>
+                            <p>Casco de seguridad industrial para protección personal.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="seguridad">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Guantes de Seguridad">
+                        </div>
+                        <div class="product-info">
+                            <h3>Guantes de Seguridad</h3>
+                            <p>Guantes de protección para trabajos industriales.</p>
+                            <button class="btn btn-secondary">Ver más</button>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer (igual que en index.html) -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -80,9 +247,26 @@
         </div>
     </footer>
 
-    <!-- Modal (igual que en index.html) -->
+    <!-- Modal para productos -->
     <div id="product-modal" class="modal">
-        <!-- Contenido del modal -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-product-image">
+                <img id="modal-img" src="" alt="">
+            </div>
+            <div class="modal-product-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <div class="modal-details">
+                    <h3>Detalles Técnicos</h3>
+                    <ul id="modal-specs"></ul>
+                </div>
+                <div class="modal-applications">
+                    <h3>Aplicaciones</h3>
+                    <p id="modal-applications"></p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>

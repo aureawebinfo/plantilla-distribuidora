@@ -690,6 +690,76 @@ section {
     left: -1rem;
 }
 
+/* Hero del Catálogo */
+.catalog-hero {
+    padding: 8rem 0 4rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--steel-blue) 0%, var(--dark-gray) 100%);
+}
+
+.catalog-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.catalog-hero p {
+    font-size: 1.2rem;
+    color: var(--silver-gray);
+}
+
+/* Filtros del Catálogo */
+.catalog-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--dark-gray);
+    color: var(--smoke-white);
+    border: 2px solid var(--energy-orange);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--energy-orange);
+    color: var(--smoke-white);
+}
+
+/* Catálogo */
+.catalog {
+    padding: 3rem 0;
+}
+
+/* Asegurar que los productos se muestren correctamente */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: var(--dark-gray);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .hero .container {
